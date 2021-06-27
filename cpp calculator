@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+
+class A
+{
+    int a,b,choice;
+public:
+    void calc()
+    {
+        do {
+        cout<<"Enter first number:-"<<endl;
+        cin>>a;
+        cout<<"Enter second number:-"<<endl;
+        cin>>b;
+        cout<<"what you want to do:-"<<"\n Enter 1 to add"<<"\n Enter 2 to multiply"<<"\n Enter 3 to divide"<<"\n Enter 4 to subtract"<<"\n enter 0 to stop"<<"\n";
+
+        cin>>choice;
+        switch(choice){
+        case 1:
+            cout<<a+b<<endl;
+            break;
+
+        case 2:
+            cout<<a*b<<endl;
+            break;
+        case 3:
+            cout<<a/b<<endl;
+            break;
+
+        case 4:
+            cout<<a-b<<endl;
+            break;
+        }
+
+        }
+        while(choice>=1&&choice<=4&&choice!=0);
+
+    }
+
+};
+int main()
+{
+
+A v;
+v.calc();
+
+}
+
+
+
